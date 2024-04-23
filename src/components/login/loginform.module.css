@@ -1,0 +1,64 @@
+.centered__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  gap: 50px;
+}
+
+.login__title {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: #18181b;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.login__form label {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+
+.login__form input,
+.login__form button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 16px;
+  border-radius: 16px;
+  gap: 4px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+
+.login__form input {
+  border: 1px solid #18181b;
+  background: linear-gradient(0deg, #18181b, #18181b)
+    linear-gradient(0deg, #ffffff, #ffffff);
+  font-size: 20px;
+}
+
+.login__form button {
+  background: #000000;
+  color: #ffffff;
+}
+
+
