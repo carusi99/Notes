@@ -1,0 +1,18 @@
+.notes__container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.default__h1{
+font-size: var(--font-4xl);
+line-height: var(--leading-none);
+text-align: center;
+}
+.title{
+  width: 100%;
+  font-weight: 600;
+  font-size: var(--font-3xl);
+  line-height: var(--leading-none);
+  
+}
+
