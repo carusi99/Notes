@@ -1,5 +1,5 @@
-import Notes from '../../components/notes/index.js';
-import CreateNote from '../../components/createNote/index.js';
+import Notes from '../notes/index.js';
+import CreateNote from '../createNote/index.js';
 import { useEffect, useState } from 'react';
 import NotesMannager from "../../NotesMannager/NotesMannager.js"
 import styles from "./homepage.module.css"

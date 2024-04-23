@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import HomePage from './components/home/HomePage';
 import LoginForm from './components/login/LoginForm';
 
-
 function App() {
   const [username, setUsername] = React.useState('')
 
