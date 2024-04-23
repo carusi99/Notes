@@ -1,0 +1,26 @@
+.SideBar {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px 0;
+    row-gap: var(--spacing-2); 
+    border: 1px solid hsla(0, 0%, 90%, 1);
+}
+
+.ButtonSideBar {
+    display: flex;
+    align-items: center; 
+    column-gap: var(--spacing-4);
+    width: 280px; 
+    height: 48px;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    cursor: pointer;
+    background-color: hsla(0, 0%, 96%, 1);
+}
+.ButtonSideBar:hover{
+    background-color: hsla(0, 0%, 94%, 1);
+}
+.ButtonSideBar > p {
+    font-size: var(--font-lg);
+    font-weight: 600;
+}
