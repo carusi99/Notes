@@ -1,0 +1,27 @@
+:root {
+  --space-unit: 0.25rem; /* 4px */
+
+  --spacing-0_5: calc(var(--space-unit) * 0.5);
+  --spacing-1: calc(var(--space-unit) * 1);
+  --spacing-1_5: calc(var(--space-unit) * 1.5);
+  --spacing-2: calc(var(--space-unit) * 2);
+  --spacing-2_5: calc(var(--space-unit) * 2.5);
+  --spacing-3: calc(var(--space-unit) * 3);
+  --spacing-3_5: calc(var(--space-unit) * 3.5);
+  --spacing-4: calc(var(--space-unit) * 4);
+  --spacing-5: calc(var(--space-unit) * 5);
+  --spacing-6: calc(var(--space-unit) * 6);
+  --spacing-7: calc(var(--space-unit) * 7);
+  --spacing-8: calc(var(--space-unit) * 8);
+  --spacing-9: calc(var(--space-unit) * 9);
+  --spacing-10: calc(var(--space-unit) * 10);
+  --spacing-11: calc(var(--space-unit) * 11);
+  --spacing-12: calc(var(--space-unit) * 12);
+  --spacing-14: calc(var(--space-unit) * 14);
+  --spacing-16: calc(var(--space-unit) * 16);
+  --spacing-20: calc(var(--space-unit) * 20);
+  --spacing-24: calc(var(--space-unit) * 24);
+  --spacing-28: calc(var(--space-unit) * 28);
+  --spacing-32: calc(var(--space-unit) * 32);
+  --spacing-36: calc(var(--space-unit) * 36);
+}
