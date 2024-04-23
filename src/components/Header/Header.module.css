@@ -1,0 +1,23 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+    padding: 12px 32px;    
+}
+
+.Header__title {
+    font-size: var(--font-lg);
+    line-height: var(--leading-8);
+    color: hsla(240, 6%, 10%, 1);
+}
+.Header__title > span{
+    font-weight: 700;
+}
+
+.Header__button {
+    background: none;
+    background-color: none;
+    border:none;
+    cursor: pointer;
+}
