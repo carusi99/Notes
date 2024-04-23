@@ -1,0 +1,11 @@
+.homepage__container{
+background-color: hsla(0, 0%, 96%, 1);
+border: 1px solid hsla(0, 0%, 90%, 1);
+min-height: 90vh;
+display: flex;  
+column-gap: var(--spacing-4);
+
+}
+.notes__container{
+    width: 100%;
+}
