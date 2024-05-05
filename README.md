@@ -1,46 +1,71 @@
-# Thigs to do
-El plan consiste en la implementación de un proyecto de React en donde pondremos en práctica la utilización de componentes para crear un App de notas.
 
-## Archivo NotesManager.js 
-Este archivo define una clase NotesManager que gestiona las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de notas para un usuario específico en una API.
+## ¡Gestor de Notas!
+<img src="https://github.com/carusi99/Notes/assets/151582174/dc2ed60d-8b58-4304-aa78-504852951406" width="800">
 
-El constructor inicializa las propiedades username, setter (un setter de estado para actualizar las notas) y URL de la API.
-- Métodos:
-  - getNotes(): Obtiene las notas del usuario desde la API.
-  - resetNotes(): Restaura todas las notas del usuario a su estado inicial.
-  - createNote(): Crea una nueva nota para el usuario en la API.
-  - updateNote(): Actualiza una nota existente en la API.
-  - deleteNote(): Elimina una nota existente en la API.
-    
-- Se utiliza fetch para realizar peticiones HTTP a la API, manejando las respuestas y errores correspondientes.
-- Se utiliza el método #options para construir las opciones de la solicitud, como el método HTTP y el cuerpo JSON.
-- Se utiliza el modificador de acceso # para indicar que el método options es privado y solo accesible dentro de la clase.
+# Notes
 
-Este archivo, trabaja en conjuntos con diversos componentes, veámos cada uno de ellos:
+¡Bienvenido a mi Gestor de Notas! Este proyecto te permite gestionar tus notas de una manera intuitiva y eficiente. Desde crear nuevas notas hasta restaurarlas desde la papelera de reciclaje. tenemos todo cubierto para ti.
 
-### Componente: Home
-El componente HomePage es la página principal de la aplicación. Incluye un encabezado que muestra el nombre de usuario y un botón de salida. Tiene un diseño dividido en una barra lateral y un contenedor de notas. Utiliza un estado para alternar la visibilidad de la papelera de reciclaje. Renderiza el componente Sidebar para la navegación y CreateNote y Notes para crear y mostrar notas respectivamente, dependiendo del estado de visibilidad de la papelera. También renderiza el componente Trash si se muestra la papelera de reciclaje.
 
-### Componente: colorPalleteButton
-El componente ColorPaletteButton es un botón que despliega una paleta de colores cuando se hace clic. Al hacer clic en un color de la paleta, se actualiza el color seleccionado y se ejecuta una función de actualización opcional. Utiliza un estado local para controlar la visibilidad de la paleta de colores. Los colores disponibles se definen en una matriz y se representan como cuadrados coloreados en la paleta.
+## Características Principales
+- `Operaciones CRUD`: Con un sistema, que puedes crear, leer, actualizar y eliminar notas con facilidad gracias a una integración perfecta con una API.
+- `Diseño Intuitivo`: Esta interfaz de usuario es simple y fácil de usar, con una barra lateral para navegar entre tus notas y la papelera de reciclaje.
+- `Personalización de Color`: Dale vida a tus notas con la paleta de colores personalizada. ¡Haz que tus notas destaquen!
+- `Seguridad y Privacidad`: Se almacenan tus datos de manera segura y protegida, para que puedas concentrarte en lo que realmente importa: tus notas.
 
-### Componente: createNote
-El componente CreateNote es un formulario para crear una nueva nota. Tiene campos para ingresar el título y el contenido de la nota, así como un botón para guardar la nota. También incluye un botón para seleccionar el color de la nota mediante una paleta de colores. Utiliza estados locales para gestionar el título, contenido, color y mensajes de error. Está estilizado con CSS modules para una apariencia coherente.
+## Componentes Principales
 
-### Componente: Header
-El componente Header muestra un título de bienvenida personalizado con el nombre de usuario almacenado en el localStorage. Incluye un botón de salida que activa una función pasada como prop (handleState). Está estilizado utilizando CSS modules para mantener los estilos encapsulados y modulares.
+| Componente             | Detalles                                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| Home: | La página principal de la aplicación, donde puedes ver todas tus notas y gestionarlas fácilmente.|
+| Sidebar: |Navega entre las secciones de notas y la papelera de reciclaje con facilidad.|
+| createNote: | Un formulario intuitivo para agregar nuevas notas a tu colección. |
+| Notes: | Representa cada una de tus notas, con opciones para editar, cambiar de color y más. |
+| trash: |  No te preocupes si eliminaste una nota por error, aquí puedes restaurarla en un instante. |
 
-### Componente: Login
-El componente LoginForm es un formulario de inicio de sesión que solicita al usuario ingresar su nombre de usuario. Tiene un estado local para almacenar el nombre de usuario y mensajes de error. Cuando el usuario hace clic en el botón "Enter", valida que el nombre de usuario no esté vacío y llama a la función onLogin para realizar el inicio de sesión. Está estilizado utilizando CSS modules para una apariencia consistente.
+## instalación
 
-### Componente: noteCard
-El componente NoteCard representa una nota en la aplicación. Permite editar el título y el contenido de la nota. Incluye opciones para cambiar el color de la nota, marcarla como eliminada o restaurarla, fijarla o desfijarla y eliminarla permanentemente. Utiliza estados locales para gestionar el color, el estado de edición y el contenido editado de la nota. Está estilizado con CSS modules para una apariencia consistente.
+- Asegúrese de que sus versiones de NodeJS y npm estén actualizadas para React ^18.2.0
 
-### Componente: notes
-El componente Notes muestra todas las notas del usuario, divididas en notas fijadas y otras notas. Para cada nota, se renderiza el componente NoteCard, que permite actualizar el color, el contenido y el estado de la nota. Utiliza funciones de manejo de eventos para actualizar y eliminar notas a través del componente NotesManager. Además, está estilizado con CSS modules para una apariencia coherente. Si no hay notas fijadas u otras notas, se muestra un mensaje indicando que no hay notas disponibles.
+- Instalar dependencias: npm install or yarn Una pequeña introducción sobre la instalación.
 
-### Componente: Sidebar
-El componente Sidebar es una barra lateral de navegación que permite alternar entre las secciones de notas y papelera de reciclaje. Incluye dos botones con iconos representativos y texto descriptivo para cada sección. Al hacer clic en un botón, se activa la función setShowTrash para cambiar entre las secciones de notas y papelera de reciclaje. Está estilizado con CSS modules para una apariencia coherente.
+Clone este repositorio
 
-### Componente: trash
-El componente Trash muestra todas las notas eliminadas, permitiendo al usuario visualizar y restaurarlas si es necesario. Utiliza el componente NoteCard para representar cada nota eliminada, proporcionando opciones para actualizar y eliminar permanentemente las notas. Utiliza funciones de manejo de eventos para realizar operaciones de actualización y eliminación en las notas. Está estilizado con CSS modules para una apariencia coherente.
+```bash
+  git clone https://github.com/carusi99/Notes.git
+```
+
+Ir al directorio del proyecto
+
+```bash
+  cd my-project
+```
+
+Instalar dependencias
+
+```bash
+  npm install
+```
+
+Iniciar el servidor
+
+```bash
+  npm run start
+```
+
+## 🛠 Tecnologías 
+- **JavaScript**: El lenguaje de programación principal utilizado para la lógica del lado del cliente y del servidor.
+- **React**: Utilizado para construir la interfaz de usuario interactiva y dinámica de la aplicación.
+- **HTML y CSS**: Utilizados para estilizar la interfaz de usuario.
+- **CSS Modules**: Para mantener los estilos encapsulados y modulares.
+- **API Fetch**: Utilizado para realizar peticiones HTTP a la API del servidor y gestionar las respuestas y errores correspondientes.
+- **localStorage**: Utilizado para almacenar y recuperar el nombre de usuario en el cliente.
+- **npm**: Gestor de paquetes utilizado para instalar y gestionar las dependencias del proyecto.
+
+## Paquetes usados:
+
+ - [react (^18.2.0)](https://es.react.dev/)
+ - [react-dom (^18.2.0)](https://www.npmjs.com/package/react-dom)
+ - [vite.js](https://vitejs.dev/)
+
+## 😄¡Y eso es todo! Empieza a organizar tus ideas con el Gestor de Notas hoy mismo.
