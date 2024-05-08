@@ -16,6 +16,8 @@
     border-radius: 0px 25px 25px 0px;
     cursor: pointer;
     background-color: hsla(0, 0%, 96%, 1);
+    margin-left: 20px;
+    
 }
 .ButtonSideBar:hover{
     background-color: hsla(0, 0%, 94%, 1);
@@ -23,4 +25,10 @@
 .ButtonSideBar > p {
     font-size: var(--font-lg);
     font-weight: 600;
+}
+
+@media only screen and (max-width: 650px) {
+    .SideBar {
+        width: 100%;/* Cambia a display de bloque */
+    }
 }

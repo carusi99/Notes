@@ -84,3 +84,26 @@
   display: flex;
   justify-content: center;
 }
+
+@media only screen and (max-width: 950px) {
+  .form__inputs {
+    /* Ajusta el ancho para tablet */
+    width: 492px;
+  }
+}
+
+/* Media query para celular */
+@media only screen and (max-width: 850px) {
+  .form__inputs {
+    /* Ajusta el ancho para celular */
+    width: 292px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .form__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

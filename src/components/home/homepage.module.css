@@ -9,3 +9,9 @@ column-gap: var(--spacing-4);
 .notes__container{
     width: 100%;
 }
+
+@media only screen and (max-width: 650px) {
+    .homepage__container {
+        display: block; /* Cambia a display de bloque */
+    }
+}
